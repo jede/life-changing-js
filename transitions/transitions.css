@@ -1,0 +1,34 @@
+body {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 60px;
+}
+
+
+.button {
+  outline: none;
+  border: none;
+  background-color: darkturquoise;
+  color: white;
+  border-radius: 3px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 20px 30px;
+  letter-spacing: 0.1em;
+
+  transition: transform 0.5s, opacity 0.2s;
+
+}
+
+.button:hover {
+  transform: scale(1.03);
+  opacity: 0.7;
+}
+
+
+.button-popped, .button-popped:hover {
+  transform: scale(2);
+  background-color: coral;
+}

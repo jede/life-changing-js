@@ -163,35 +163,6 @@ button.addEventListener('click', function(event){
   localStorage.setItem('userName', name);
 })
 
-// Local storage + JSON
-
-var button = document.getElementById('button');
-var heading = document.getElementById('heading');
-var nameField = document.getElementById('name-field');
-var greetingField = document.getElementById('greeting-field');
-
-var greet = function (greeting, name) {
-  heading.innerHTML = greeting + ' ' + name + '!';  
-} 
-
-var settings = {}
-
-var settingsData = localStorage.getItem('userSettings');
-if(settingsData != null) {
-  settings = JSON.parse(settingsData);
-  nameField.value = settings.name;
-  greetingField.value = settings.greeting;
-  greet(settings.greeting, settings.name);
-}
-
-button.addEventListener('click', function(event){
-  var greeting = greetingField.value;
-  var name = nameField.value;
-  greet(greeting, name);
-  settings.greeting = greeting;
-  settings.name = name;
-  localStorage.setItem('userSettings', JSON.stringify(settings));
-})
 
 
 
