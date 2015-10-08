@@ -1,0 +1,24 @@
+body {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+.text-field {
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 3px;
+  border: 1px solid hsl(0, 0%, 85%);
+}
+
+.button {
+  border: none;
+  background-color: darkturquoise;
+  color: white;
+  border-radius: 3px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: ;
+  padding: 15px 30px;
+  letter-spacing: 0.1em;
+}

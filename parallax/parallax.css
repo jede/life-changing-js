@@ -1,0 +1,24 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.header {
+  position: relative;
+  height : 100vh;
+  background-image: url(background.jpeg);
+  background-size: cover;
+  margin-bottom: 400px;
+}
+
+.header-title {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  color: white;
+}
